@@ -160,4 +160,19 @@ public class SessionCours {
     public int hashCode() {
         return Objects.hash(id, dateDebut, dateFin);
     }
+
+    /**
+     * to string de la classe
+     * @return
+     */
+    @Override
+    public String toString() {
+        return "SessionCours{" +
+                "id=" + id +
+                ", dateDebut=" + dateDebut +
+                ", dateFin=" + dateFin +
+                ", nbreInscrits=" + nbreInscrits +
+                ", infos=" + infos +
+                '}';
+    }
 }

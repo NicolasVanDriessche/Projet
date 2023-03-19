@@ -31,7 +31,7 @@ public class Formateur {
     /**
      * constructeur paramétré
      * @param id id unique du formateur
-     * @param mail mail unique du formateur
+     * @param )ail mail unique du formateur
      * @param nom nom du formateur
      * @param prenom prénom du formateur
      */
@@ -131,5 +131,19 @@ public class Formateur {
     @Override
     public int hashCode() {
         return Objects.hash(mail, nom, prenom);
+    }
+
+    /**
+     * to string de la classe
+     * @return
+     */
+    @Override
+    public String toString() {
+        return "Formateur{" +
+                "id=" + id +
+                ", mail='" + mail + '\'' +
+                ", nom='" + nom + '\'' +
+                ", prenom='" + prenom + '\'' +
+                '}';
     }
 }

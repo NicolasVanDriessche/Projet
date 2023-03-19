@@ -87,4 +87,16 @@ public class Infos {
     public int hashCode() {
         return Objects.hash(nh, formateur);
     }
+
+    /**
+     * to string de la classe
+     * @return
+     */
+    @Override
+    public String toString() {
+        return "Infos{" +
+                "nh=" + nh +
+                ", formateur=" + formateur +
+                '}';
+    }
 }

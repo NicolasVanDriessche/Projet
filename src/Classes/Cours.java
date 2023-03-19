@@ -133,4 +133,18 @@ public class Cours {
     public int hashCode() {
         return Objects.hash(id, matiere);
     }
+
+    /**
+     * to string de la classe
+     * @return
+     */
+    @Override
+    public String toString() {
+        return "Cours{" +
+                "id=" + id +
+                ", matiere='" + matiere + '\'' +
+                ", heures=" + heures +
+                ", session=" + session +
+                '}';
+    }
 }

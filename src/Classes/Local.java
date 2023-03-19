@@ -159,4 +159,19 @@ public class Local {
     public int hashCode() {
         return Objects.hash(sigle);
     }
+
+    /**
+     * to string de la classe
+     * @return
+     */
+    @Override
+    public String toString() {
+        return "Local{" +
+                "id=" + id +
+                ", sigle='" + sigle + '\'' +
+                ", places=" + places +
+                ", description='" + description + '\'' +
+                ", session=" + session +
+                '}';
+    }
 }

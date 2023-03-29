@@ -27,4 +27,12 @@ public class CoursModel implements DAOCours {
     public List<Cours> getCours() {
         return new ArrayList<>(cours);
     }
+
+    @Override
+    public Cours updateCours(Cours cour){
+        int p = cours.indexOf(cour);
+        if(p<0) return null;
+        cours.set(p, cour);
+        return cour;
+    }
 }

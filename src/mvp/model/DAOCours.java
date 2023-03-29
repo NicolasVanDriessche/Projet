@@ -10,4 +10,6 @@ public interface DAOCours {
     boolean removeCours(Cours co);
 
     List<Cours> getCours();
+
+    Cours updateCours(Cours cours);
 }

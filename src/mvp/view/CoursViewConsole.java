@@ -9,6 +9,8 @@ import java.util.List;
 import java.util.Scanner;
 import utilitaires.Utilitaire;
 
+import static utilitaires.Utilitaire.choixElt;
+
 public class CoursViewConsole implements CoursViewInterface{
 
     private CoursPresenter presenter;
@@ -69,13 +71,14 @@ public class CoursViewConsole implements CoursViewInterface{
     }
 
     public void retirer(){
-        int choix = Utilitaire.choixElt(lcours);
+        int choix = choixElt(lcours);
         Cours cours = lcours.get(choix-1);
         presenter.removeCours(cours);
     }
 
     public void modifier(){
-        System.out.println("id: ");
+        int choix = choixElt(lcours);
+        Cours co = lcours.get(choix-1);
         int id = sc.nextInt();
         System.out.println("matière: ");
         String matiere = sc.nextLine();

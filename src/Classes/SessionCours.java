@@ -1,5 +1,6 @@
 package Classes;
 
+import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
@@ -21,12 +22,12 @@ public class SessionCours {
     /**
      * Date de début de la session
      */
-    private Date dateDebut;
+    private LocalDate dateDebut;
 
     /**
      * date de fin de la session
      */
-    private Date dateFin;
+    private LocalDate dateFin;
     /**
      * nbre d'inscrits pour la session
      */
@@ -45,7 +46,7 @@ public class SessionCours {
      * @param nbreInscrits nbre d'inscrits pour les sessions
      */
 
-    public SessionCours(int id, Date dateDebut, Date dateFin, int nbreInscrits) {
+    public SessionCours(int id, LocalDate dateDebut, LocalDate dateFin, int nbreInscrits) {
         this.id = id;
         this.dateDebut = dateDebut;
         this.dateFin = dateFin;
@@ -91,7 +92,7 @@ public class SessionCours {
      * @return la date de début des sessions de cours
      */
 
-    public Date getDateDebut() {
+    public LocalDate getDateDebut() {
         return dateDebut;
     }
 
@@ -100,7 +101,7 @@ public class SessionCours {
      * @param dateDebut changement de la date de début des sessions de cours
      */
 
-    public void setDateDebut(Date dateDebut) {
+    public void setDateDebut(LocalDate dateDebut) {
         this.dateDebut = dateDebut;
     }
 
@@ -108,7 +109,7 @@ public class SessionCours {
      * getter dateFin
      * @return date de fin des sessions de cours
      */
-    public Date getDateFin() {
+    public LocalDate getDateFin() {
         return dateFin;
     }
 
@@ -117,7 +118,7 @@ public class SessionCours {
      * @param dateFin changement de la date de fin des sessions de cours
      */
 
-    public void setDateFin(Date dateFin) {
+    public void setDateFin(LocalDate dateFin) {
         this.dateFin = dateFin;
     }
 

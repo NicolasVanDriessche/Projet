@@ -1,5 +1,6 @@
 package utilitaires;
 
+import java.time.LocalDate;
 import java.util.List;
 import java.util.Scanner;
 
@@ -26,6 +27,14 @@ public class Utilitaire {
             sc.skip("\n");
         } while(choix <1 || choix > l.size());
         return choix;
+    }
+
+    public static LocalDate lecDate(){
+        String[] jma = sc.nextLine().split(" ");
+        int j = Integer.parseInt(jma[0]);
+        int m = Integer.parseInt(jma[1]);
+        int a = Integer.parseInt(jma[2]);
+        return LocalDate.of(a,m,j);
     }
 
 
